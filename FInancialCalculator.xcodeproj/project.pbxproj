@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300850382456BF930086BAB1 /* FinanceCalcultorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300850372456BF930086BAB1 /* FinanceCalcultorController.swift */; };
+		300DF4EE24600203000804E9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DF4EC24600203000804E9 /* CustomCell.swift */; };
+		300DF4EF24600203000804E9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300DF4ED24600203000804E9 /* CustomCell.xib */; };
 		306CA4642450A2DC004AC689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CA4632450A2DC004AC689 /* AppDelegate.swift */; };
 		306CA4662450A2DC004AC689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CA4652450A2DC004AC689 /* SceneDelegate.swift */; };
-		306CA4682450A2DC004AC689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CA4672450A2DC004AC689 /* ViewController.swift */; };
+		306CA4682450A2DC004AC689 /* BasicCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CA4672450A2DC004AC689 /* BasicCalculatorViewController.swift */; };
 		306CA46B2450A2DC004AC689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306CA4692450A2DC004AC689 /* Main.storyboard */; };
 		306CA46D2450A2DD004AC689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306CA46C2450A2DD004AC689 /* Assets.xcassets */; };
 		306CA4702450A2DD004AC689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306CA46E2450A2DD004AC689 /* LaunchScreen.storyboard */; };
+		307176FF2452C6B3009DDD5F /* BasicCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307176FE2452C6B3009DDD5F /* BasicCalculator.swift */; };
+		308631D12460EFB800CEA1B9 /* LoanTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308631D02460EFB800CEA1B9 /* LoanTableViewViewController.swift */; };
+		30B85AAF24581583001ADBA0 /* LoansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B85AAE24581583001ADBA0 /* LoansViewController.swift */; };
+		30B85AB12458453A001ADBA0 /* LoanCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B85AB02458453A001ADBA0 /* LoanCalculator.swift */; };
+		30F6C71124664F38000C5118 /* PresentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6C71024664F38000C5118 /* PresentValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300850372456BF930086BAB1 /* FinanceCalcultorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceCalcultorController.swift; sourceTree = "<group>"; };
+		300DF4EC24600203000804E9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		300DF4ED24600203000804E9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		306CA4602450A2DC004AC689 /* FInancialCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FInancialCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306CA4632450A2DC004AC689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306CA4652450A2DC004AC689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		306CA4672450A2DC004AC689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		306CA4672450A2DC004AC689 /* BasicCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCalculatorViewController.swift; sourceTree = "<group>"; };
 		306CA46A2450A2DC004AC689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		306CA46C2450A2DD004AC689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306CA46F2450A2DD004AC689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		306CA4712450A2DD004AC689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307176FE2452C6B3009DDD5F /* BasicCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCalculator.swift; sourceTree = "<group>"; };
+		308631D02460EFB800CEA1B9 /* LoanTableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTableViewViewController.swift; sourceTree = "<group>"; };
+		30B85AAE24581583001ADBA0 /* LoansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansViewController.swift; sourceTree = "<group>"; };
+		30B85AB02458453A001ADBA0 /* LoanCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculator.swift; sourceTree = "<group>"; };
+		30F6C71024664F38000C5118 /* PresentValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		305800E3245174170040D964 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				306CA4692450A2DC004AC689 /* Main.storyboard */,
+				300DF4EC24600203000804E9 /* CustomCell.swift */,
+				300DF4ED24600203000804E9 /* CustomCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		305800E4245174210040D964 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				306CA4672450A2DC004AC689 /* BasicCalculatorViewController.swift */,
+				300850372456BF930086BAB1 /* FinanceCalcultorController.swift */,
+				30B85AAE24581583001ADBA0 /* LoansViewController.swift */,
+				308631D02460EFB800CEA1B9 /* LoanTableViewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		306CA4572450A2DC004AC689 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +95,24 @@
 			children = (
 				306CA4632450A2DC004AC689 /* AppDelegate.swift */,
 				306CA4652450A2DC004AC689 /* SceneDelegate.swift */,
-				306CA4672450A2DC004AC689 /* ViewController.swift */,
-				306CA4692450A2DC004AC689 /* Main.storyboard */,
+				307177002452C6C3009DDD5F /* Models */,
+				305800E4245174210040D964 /* Controller */,
+				305800E3245174170040D964 /* View */,
 				306CA46C2450A2DD004AC689 /* Assets.xcassets */,
 				306CA46E2450A2DD004AC689 /* LaunchScreen.storyboard */,
 				306CA4712450A2DD004AC689 /* Info.plist */,
 			);
 			path = FInancialCalculator;
+			sourceTree = "<group>";
+		};
+		307177002452C6C3009DDD5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				307176FE2452C6B3009DDD5F /* BasicCalculator.swift */,
+				30B85AB02458453A001ADBA0 /* LoanCalculator.swift */,
+				30F6C71024664F38000C5118 /* PresentValue.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,7 @@
 			files = (
 				306CA4702450A2DD004AC689 /* LaunchScreen.storyboard in Resources */,
 				306CA46D2450A2DD004AC689 /* Assets.xcassets in Resources */,
+				300DF4EF24600203000804E9 /* CustomCell.xib in Resources */,
 				306CA46B2450A2DC004AC689 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306CA4682450A2DC004AC689 /* ViewController.swift in Sources */,
+				30B85AB12458453A001ADBA0 /* LoanCalculator.swift in Sources */,
+				307176FF2452C6B3009DDD5F /* BasicCalculator.swift in Sources */,
+				306CA4682450A2DC004AC689 /* BasicCalculatorViewController.swift in Sources */,
+				308631D12460EFB800CEA1B9 /* LoanTableViewViewController.swift in Sources */,
+				300DF4EE24600203000804E9 /* CustomCell.swift in Sources */,
 				306CA4642450A2DC004AC689 /* AppDelegate.swift in Sources */,
+				300850382456BF930086BAB1 /* FinanceCalcultorController.swift in Sources */,
+				30B85AAF24581583001ADBA0 /* LoansViewController.swift in Sources */,
 				306CA4662450A2DC004AC689 /* SceneDelegate.swift in Sources */,
+				30F6C71124664F38000C5118 /* PresentValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6PBH98WG5;
 				INFOPLIST_FILE = FInancialCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6PBH98WG5;
 				INFOPLIST_FILE = FInancialCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
