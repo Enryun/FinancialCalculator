@@ -63,10 +63,12 @@ class LoansViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondVC = segue.destination as! LoanTableViewViewController
+        
+        // Display Full Sceneeee
         secondVC.modalPresentationStyle = .fullScreen
+        
         secondVC.anuiatyAmount = loanCalculator.anuiaty
         secondVC.numberOfRow = loanCalculator.years
-
         
         let endLoops = Int(loanCalculator.years!)
         
