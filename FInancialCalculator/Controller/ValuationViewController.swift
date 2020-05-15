@@ -19,14 +19,9 @@ class ValuationViewController: UIViewController {
     
 
     @IBAction func dividentBtn(_ sender: UIButton) {
-        performSegue(withIdentifier: "toDivident", sender: self)
+        performSegue(withIdentifier: "toDetails", sender: self)
     }
     
-    @IBAction func fcfBtn(_ sender: Any) {
-    }
-    
-    @IBAction func residualBtn(_ sender: Any) {
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondVC = segue.destination

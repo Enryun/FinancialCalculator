@@ -351,7 +351,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="fcfBtn:" destination="8lB-2W-Njt" eventType="touchUpInside" id="7Vx-eE-TE2"/>
+                                                    <action selector="dividentBtn:" destination="8lB-2W-Njt" eventType="touchUpInside" id="rJA-3g-fGV"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-cJ-qiV">
@@ -382,7 +382,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="149.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="residualBtn:" destination="8lB-2W-Njt" eventType="touchUpInside" id="giB-Mp-kPM"/>
+                                                    <action selector="dividentBtn:" destination="8lB-2W-Njt" eventType="touchUpInside" id="6HF-Rw-xbh"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="LWs-Ej-37Y">
@@ -420,7 +420,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Valuation" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="wj6-Mj-FTH"/>
                     <connections>
-                        <segue destination="msW-nS-Zfu" kind="presentation" identifier="toDivident" id="Y6s-NG-7s2"/>
+                        <segue destination="yKM-h1-Z7B" kind="presentation" identifier="toDetails" id="VR4-Nj-PXw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AD-Fi-Tad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -446,6 +446,7 @@
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="CalculatePressed:" destination="msW-nS-Zfu" eventType="touchUpInside" id="iDy-7Y-lCk"/>
                                     <action selector="calculatePress:" destination="jB0-pm-wmN" eventType="touchUpInside" id="Ggx-jq-Se5"/>
                                 </connections>
                             </button>
@@ -571,9 +572,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KDj-J4-Ooc"/>
                                 </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Discount Divident" id="Fpy-hM-ggM">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="fHQ-NQ-Pbt"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="fHQ-NQ-Pbt">
+                                            <connections>
+                                                <action selector="backPressed:" destination="msW-nS-Zfu" id="8FS-xa-zog"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -591,10 +597,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Maa-XD-iDi"/>
                     </view>
+                    <connections>
+                        <outlet property="dividentValue" destination="8X5-Fg-R3j" id="d2J-lT-m27"/>
+                        <outlet property="growthRateValue" destination="eCU-7A-fJ4" id="PTf-l3-qLG"/>
+                        <outlet property="resultValue" destination="Uso-r1-9im" id="oIT-U7-DUp"/>
+                        <outlet property="returnValue" destination="bjZ-Xu-0YP" id="4GM-xP-1UE"/>
+                        <outlet property="segmentLabel" destination="nnA-MV-qoA" id="Agj-S2-sEP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4S-Oi-R0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2639" y="-2391"/>
+            <point key="canvasLocation" x="4026" y="-2516"/>
         </scene>
         <!--Functions-->
         <scene sceneID="1lk-cr-MDa">
@@ -795,38 +808,75 @@
             <objects>
                 <viewController id="yKM-h1-Z7B" userLabel="Model Description" customClass="ModelDetailsViewController" customModule="FInancialCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GwP-VU-o5u">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N34-Lp-ex2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N34-Lp-ex2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-1" translatesAutoresizingMaskIntoConstraints="NO" id="tRo-h8-1VT">
-                                        <rect key="frame" x="-6" y="-7" width="430" height="913"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-1" translatesAutoresizingMaskIntoConstraints="NO" id="tRo-h8-1VT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                     </imageView>
-                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPc-g9-qy8">
-                                        <rect key="frame" x="0.0" y="32" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPc-g9-qy8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Omu-yb-az2"/>
+                                        </constraints>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <items>
                                             <navigationItem title="Title" id="NMQ-Oe-HUw">
-                                                <barButtonItem key="leftBarButtonItem" systemItem="reply" id="uLK-A8-4mq"/>
-                                                <barButtonItem key="rightBarButtonItem" title="Next" id="8bF-uq-FTf"/>
+                                                <barButtonItem key="leftBarButtonItem" systemItem="reply" id="uLK-A8-4mq">
+                                                    <connections>
+                                                        <action selector="backPress:" destination="yKM-h1-Z7B" id="UYg-Ux-iss"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                                <barButtonItem key="rightBarButtonItem" title="Next" id="8bF-uq-FTf">
+                                                    <connections>
+                                                        <action selector="nextPress:" destination="yKM-h1-Z7B" id="q7v-wz-CY9"/>
+                                                    </connections>
+                                                </barButtonItem>
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co5-61-p2I">
+                                        <rect key="frame" x="70" y="144" width="274" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="VPc-g9-qy8" firstAttribute="top" secondItem="N34-Lp-ex2" secondAttribute="top" id="1rI-tk-YJy"/>
+                                    <constraint firstItem="VPc-g9-qy8" firstAttribute="centerX" secondItem="Co5-61-p2I" secondAttribute="centerX" id="Ce3-pf-TKK"/>
+                                    <constraint firstItem="VPc-g9-qy8" firstAttribute="leading" secondItem="N34-Lp-ex2" secondAttribute="leading" id="Jwr-VR-Cb9"/>
+                                    <constraint firstItem="Co5-61-p2I" firstAttribute="top" secondItem="VPc-g9-qy8" secondAttribute="bottom" constant="104" id="R27-SG-f8J"/>
+                                    <constraint firstItem="tRo-h8-1VT" firstAttribute="leading" secondItem="N34-Lp-ex2" secondAttribute="leading" id="VRV-j9-9jT"/>
+                                    <constraint firstItem="tRo-h8-1VT" firstAttribute="top" secondItem="N34-Lp-ex2" secondAttribute="top" id="cLK-nj-Q7D"/>
+                                    <constraint firstAttribute="trailing" secondItem="tRo-h8-1VT" secondAttribute="trailing" id="dO4-cP-UyK"/>
+                                    <constraint firstItem="Co5-61-p2I" firstAttribute="leading" secondItem="N34-Lp-ex2" secondAttribute="leading" constant="70" id="jXS-6l-1db"/>
+                                    <constraint firstItem="tRo-h8-1VT" firstAttribute="bottom" secondItem="N34-Lp-ex2" secondAttribute="bottom" id="mOw-0e-HDs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Co5-61-p2I" secondAttribute="trailing" constant="70" id="vC5-0U-IeV"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N34-Lp-ex2" firstAttribute="trailing" secondItem="Fk7-if-taf" secondAttribute="trailing" id="7Uh-ls-ATl"/>
+                            <constraint firstAttribute="bottom" secondItem="N34-Lp-ex2" secondAttribute="bottom" id="GVf-1F-acN"/>
+                            <constraint firstItem="N34-Lp-ex2" firstAttribute="leading" secondItem="Fk7-if-taf" secondAttribute="leading" id="Hy3-sE-UCD"/>
+                            <constraint firstAttribute="bottom" secondItem="N34-Lp-ex2" secondAttribute="bottom" id="a1u-fv-OUr"/>
+                            <constraint firstItem="N34-Lp-ex2" firstAttribute="top" secondItem="Fk7-if-taf" secondAttribute="top" id="iJr-p0-KFk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fk7-if-taf"/>
                     </view>
+                    <connections>
+                        <segue destination="msW-nS-Zfu" kind="presentation" identifier="toDivident" id="8dM-Xb-S9I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkX-oe-ccW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2673.913043478261" y="-1596.4285714285713"/>
+            <point key="canvasLocation" x="2596" y="-2022"/>
         </scene>
         <!--Loan-->
         <scene sceneID="6mu-5f-1dL">
