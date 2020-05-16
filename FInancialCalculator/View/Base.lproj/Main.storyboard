@@ -316,7 +316,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zu-Qp-Go5">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="149.5"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Divident Discount"/>
                                                 <connections>
                                                     <action selector="dividentBtn:" destination="8lB-2W-Njt" eventType="touchUpInside" id="yod-jt-emK"/>
                                                 </connections>
@@ -324,7 +324,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="UNM-po-k5O">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="149.5"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount Divident" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3x-xc-MfL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divident Discount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3x-xc-MfL">
                                                 <rect key="frame" x="52.5" y="64.5" width="135.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -349,7 +349,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKz-Ip-eKu">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Free CashFlow"/>
                                                 <connections>
                                                     <action selector="dividentBtn:" destination="8lB-2W-Njt" eventType="touchUpInside" id="rJA-3g-fGV"/>
                                                 </connections>
@@ -380,7 +380,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrZ-vX-nbp">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="149.5"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Residual Income"/>
                                                 <connections>
                                                     <action selector="dividentBtn:" destination="8lB-2W-Njt" eventType="touchUpInside" id="6HF-Rw-xbh"/>
                                                 </connections>
@@ -607,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4S-Oi-R0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4026" y="-2516"/>
+            <point key="canvasLocation" x="3987" y="-2727"/>
         </scene>
         <!--Functions-->
         <scene sceneID="1lk-cr-MDa">
@@ -824,7 +824,7 @@
                                         </constraints>
                                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <items>
-                                            <navigationItem title="Title" id="NMQ-Oe-HUw">
+                                            <navigationItem title="Title hahah" id="NMQ-Oe-HUw">
                                                 <barButtonItem key="leftBarButtonItem" systemItem="reply" id="uLK-A8-4mq">
                                                     <connections>
                                                         <action selector="backPress:" destination="yKM-h1-Z7B" id="UYg-Ux-iss"/>
@@ -838,9 +838,9 @@
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co5-61-p2I">
-                                        <rect key="frame" x="70" y="144" width="274" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co5-61-p2I">
+                                        <rect key="frame" x="70" y="144" width="274" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -857,6 +857,7 @@
                                     <constraint firstItem="Co5-61-p2I" firstAttribute="leading" secondItem="N34-Lp-ex2" secondAttribute="leading" constant="70" id="jXS-6l-1db"/>
                                     <constraint firstItem="tRo-h8-1VT" firstAttribute="bottom" secondItem="N34-Lp-ex2" secondAttribute="bottom" id="mOw-0e-HDs"/>
                                     <constraint firstAttribute="trailing" secondItem="Co5-61-p2I" secondAttribute="trailing" constant="70" id="vC5-0U-IeV"/>
+                                    <constraint firstItem="Co5-61-p2I" firstAttribute="centerX" secondItem="N34-Lp-ex2" secondAttribute="centerX" id="yfw-rY-lT3"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -871,12 +872,46 @@
                         <viewLayoutGuide key="safeArea" id="Fk7-if-taf"/>
                     </view>
                     <connections>
+                        <outlet property="detailLabel" destination="Co5-61-p2I" id="9hi-TO-8jG"/>
+                        <outlet property="navigationTitle" destination="NMQ-Oe-HUw" id="Jjl-Dj-WC6"/>
                         <segue destination="msW-nS-Zfu" kind="presentation" identifier="toDivident" id="8dM-Xb-S9I"/>
+                        <segue destination="brX-ae-e3o" kind="presentation" identifier="toFCFE" id="B3E-hR-8lp"/>
+                        <segue destination="s9i-yH-RhM" kind="presentation" identifier="toResidual" id="sYB-Ah-88a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkX-oe-ccW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2596" y="-2022"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Fu-HP-trT">
+            <objects>
+                <viewController id="brX-ae-e3o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kqh-uR-dv4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VHX-vY-U6B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9a-ff-RQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3994" y="-2020"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wsk-Lf-jw3">
+            <objects>
+                <viewController id="s9i-yH-RhM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sHH-xV-nFX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Uql-5v-VxN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8W-JU-Ope" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3994" y="-1246"/>
         </scene>
         <!--Loan-->
         <scene sceneID="6mu-5f-1dL">

@@ -12,21 +12,26 @@ import UIKit
 
 class ValuationViewController: UIViewController {
 
-    
+    var valuationCalculator = ValuationModels()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
 
     @IBAction func dividentBtn(_ sender: UIButton) {
+        let userChoice = sender.titleLabel?.text
+        valuationCalculator.title = userChoice
         performSegue(withIdentifier: "toDetails", sender: self)
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondVC = segue.destination
-        secondVC.modalPresentationStyle = .fullScreen
-
+        let detailVC = segue.destination as! ModelDetailsViewController
+        detailVC.modalPresentationStyle = .fullScreen
+        
+        detailVC.titleContent = valuationCalculator.title
+        detailVC.detailContent = valuationCalculator.details
+        detailVC.nextVCIdentifier = valuationCalculator.identifier
     }
-
 }

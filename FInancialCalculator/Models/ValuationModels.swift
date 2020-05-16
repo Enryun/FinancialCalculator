@@ -9,20 +9,40 @@
 import Foundation
 
 struct ValuationModels {
-    let details: [ModelDetails] = [
-        ModelDetails(
-            title: "Discount Divident",
-            good: ["Stable future divident and growth rate"],
-            bad: ["Sensitive to growth rate and return rate"]),
-        ModelDetails(
-            title: "Free Cash Flow",
-            good: ["Companies don't pay Divident"],
-            bad: ["Cashflow can be Negetive"]),
-        ModelDetails(
-            title: "Residual Income",
-            good: [""],
-            bad: [""])
-    ]
+    
+    var title: String?
+    
+    var details: String {
+        get {
+            switch title {
+            case "Divident Discount":
+                return "Good for Companies with Stable future divident and growth rate, but the result wil be sensitive to growth rate and return rate"
+            case "Free CashFlow":
+                return "Best for Companies that don't pay Cash Divident. Becareful with Negetive or Zero Cashflow"
+            case "Residual Income":
+                return "Opportunity Cost View"
+            default:
+                return "Unexpected"
+            }
+            
+        }
+    }
+    
+    var identifier: String {
+        get {
+            switch title {
+            case "Divident Discount":
+                return "toDivident"
+            case "Free CashFlow":
+                return "toFCFE"
+            case "Residual Income":
+                return "toResidual"
+            default:
+                return "Unexpected"
+            }
+            
+        }
+    }
     
     func gordonModel(d: Double, g: Double, r: Double) -> Double {
         let result = (d*(1+g))/(r - g)
@@ -30,8 +50,4 @@ struct ValuationModels {
     }
 }
 
-struct ModelDetails {
-    let title: String
-    let good: [String]
-    let bad: [String]
-}
+

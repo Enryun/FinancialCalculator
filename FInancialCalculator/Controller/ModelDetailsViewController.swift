@@ -10,10 +10,18 @@ import UIKit
 
 class ModelDetailsViewController: UIViewController {
 
+    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var navigationTitle: UINavigationItem!
+    
+    var nextVCIdentifier: String = "toDivident"
+    var titleContent: String?
+    var detailContent: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        detailLabel.text = detailContent
+        navigationTitle.title = titleContent
     }
 
     @IBAction func backPress(_ sender: UIBarButtonItem) {
@@ -22,7 +30,7 @@ class ModelDetailsViewController: UIViewController {
     
     
     @IBAction func nextPress(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "toDivident", sender: self)
+        performSegue(withIdentifier: nextVCIdentifier, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
