@@ -68,12 +68,7 @@ class FinanceCalcultorController: UIViewController {
             } else {
                 return
             }
-            
-//            let ptm = Double(ptmLabel.text!)!
-//            let r = Double(returnLabel.text!)!/100
-//            let n = Double(periodLabel.text!)!
-//            let optionValue = Double(optionPriceLabel.text!)!
-            
+                        
             resetLabels()
         }
     }

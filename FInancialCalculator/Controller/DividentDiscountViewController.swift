@@ -17,14 +17,43 @@ class DividentDiscountViewController: UIViewController {
     @IBOutlet weak var returnValue: UITextField!
     @IBOutlet weak var resultValue: UILabel!
     
+
+    @IBOutlet weak var boomStack: UIStackView!
+    @IBOutlet weak var steadyStack: UIStackView!
+    @IBOutlet weak var returnStack: UIStackView!
+    
+    
     let valuationCalculator = ValuationModels()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        boomStack.isHidden = true
+        steadyStack.isHidden = true
     }
     
     @IBAction func backPressed(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func segmentPress(_ sender: UISegmentedControl) {
+        switch segmentLabel.selectedSegmentIndex {
+        case 0:
+    
+            boomStack.isHidden = true
+            steadyStack.isHidden = true
+            returnStack.isHidden = false
+            resetLabels()
+            resultValue.text = ""
+        case 1:
+            boomStack.isHidden = false
+            steadyStack.isHidden = false
+            returnStack.isHidden = true
+            resetLabels()
+            resultValue.text = ""
+        default: break
+        }
     }
     
     @IBAction func CalculatePressed(_ sender: UIButton) {

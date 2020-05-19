@@ -22,6 +22,7 @@
 		307176FF2452C6B3009DDD5F /* BasicCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307176FE2452C6B3009DDD5F /* BasicCalculator.swift */; };
 		308631D12460EFB800CEA1B9 /* LoanTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308631D02460EFB800CEA1B9 /* LoanTableViewViewController.swift */; };
 		308D9F6C246BBE4000D522F6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 308D9F6B246BBE4000D522F6 /* IQKeyboardManagerSwift */; };
+		309235DD247391CD00D50884 /* CashFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309235DC247391CD00D50884 /* CashFlowViewController.swift */; };
 		309424B2246D211E0041E016 /* ValuationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309424B1246D211E0041E016 /* ValuationViewController.swift */; };
 		30B85AAF24581583001ADBA0 /* LoansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B85AAE24581583001ADBA0 /* LoansViewController.swift */; };
 		30B85AB12458453A001ADBA0 /* LoanCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B85AB02458453A001ADBA0 /* LoanCalculator.swift */; };
@@ -45,6 +46,7 @@
 		306CA4712450A2DD004AC689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		307176FE2452C6B3009DDD5F /* BasicCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCalculator.swift; sourceTree = "<group>"; };
 		308631D02460EFB800CEA1B9 /* LoanTableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTableViewViewController.swift; sourceTree = "<group>"; };
+		309235DC247391CD00D50884 /* CashFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashFlowViewController.swift; sourceTree = "<group>"; };
 		309424B1246D211E0041E016 /* ValuationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuationViewController.swift; sourceTree = "<group>"; };
 		30B85AAE24581583001ADBA0 /* LoansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansViewController.swift; sourceTree = "<group>"; };
 		30B85AB02458453A001ADBA0 /* LoanCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculator.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				309424B1246D211E0041E016 /* ValuationViewController.swift */,
 				30448CE2246D3FE0006CECC3 /* DividentDiscountViewController.swift */,
 				30448CE4246D42C1006CECC3 /* ModelDetailsViewController.swift */,
+				309235DC247391CD00D50884 /* CashFlowViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				306CA4642450A2DC004AC689 /* AppDelegate.swift in Sources */,
 				300850382456BF930086BAB1 /* FinanceCalcultorController.swift in Sources */,
 				30B85AAF24581583001ADBA0 /* LoansViewController.swift in Sources */,
+				309235DD247391CD00D50884 /* CashFlowViewController.swift in Sources */,
 				30448CE7246D459B006CECC3 /* ValuationModels.swift in Sources */,
 				306CA4662450A2DC004AC689 /* SceneDelegate.swift in Sources */,
 				30F6C71124664F38000C5118 /* PresentValue.swift in Sources */,
