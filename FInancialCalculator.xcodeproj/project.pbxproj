@@ -13,6 +13,7 @@
 		30448CE3246D3FE0006CECC3 /* DividentDiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30448CE2246D3FE0006CECC3 /* DividentDiscountViewController.swift */; };
 		30448CE5246D42C1006CECC3 /* ModelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30448CE4246D42C1006CECC3 /* ModelDetailsViewController.swift */; };
 		30448CE7246D459B006CECC3 /* ValuationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30448CE6246D459B006CECC3 /* ValuationModels.swift */; };
+		304BD0212475228100FD3B14 /* ResidualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BD0202475228100FD3B14 /* ResidualViewController.swift */; };
 		306CA4642450A2DC004AC689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CA4632450A2DC004AC689 /* AppDelegate.swift */; };
 		306CA4662450A2DC004AC689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CA4652450A2DC004AC689 /* SceneDelegate.swift */; };
 		306CA4682450A2DC004AC689 /* BasicCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CA4672450A2DC004AC689 /* BasicCalculatorViewController.swift */; };
@@ -36,6 +37,7 @@
 		30448CE2246D3FE0006CECC3 /* DividentDiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividentDiscountViewController.swift; sourceTree = "<group>"; };
 		30448CE4246D42C1006CECC3 /* ModelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailsViewController.swift; sourceTree = "<group>"; };
 		30448CE6246D459B006CECC3 /* ValuationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuationModels.swift; sourceTree = "<group>"; };
+		304BD0202475228100FD3B14 /* ResidualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidualViewController.swift; sourceTree = "<group>"; };
 		306CA4602450A2DC004AC689 /* FInancialCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FInancialCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306CA4632450A2DC004AC689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306CA4652450A2DC004AC689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				30448CE2246D3FE0006CECC3 /* DividentDiscountViewController.swift */,
 				30448CE4246D42C1006CECC3 /* ModelDetailsViewController.swift */,
 				309235DC247391CD00D50884 /* CashFlowViewController.swift */,
+				304BD0202475228100FD3B14 /* ResidualViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				30448CE7246D459B006CECC3 /* ValuationModels.swift in Sources */,
 				306CA4662450A2DC004AC689 /* SceneDelegate.swift in Sources */,
 				30F6C71124664F38000C5118 /* PresentValue.swift in Sources */,
+				304BD0212475228100FD3B14 /* ResidualViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

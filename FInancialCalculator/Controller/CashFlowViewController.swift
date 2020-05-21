@@ -13,8 +13,8 @@ class CashFlowViewController: UIViewController {
     @IBOutlet weak var segmentLabel: UISegmentedControl!
     @IBOutlet weak var optionLabel: UILabel!
     @IBOutlet weak var option2Label: UILabel!
-    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var option3Label: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     
     @IBOutlet weak var optionTextField: UITextField!
     @IBOutlet weak var cashFlowTextField: UITextField!
@@ -104,5 +104,6 @@ class CashFlowViewController: UIViewController {
         cashFlowTextField.text = ""
         growthTextField.text = ""
         returnTextField.text = ""
+        
     }
 }

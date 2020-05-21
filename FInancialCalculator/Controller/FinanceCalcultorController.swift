@@ -73,6 +73,29 @@ class FinanceCalcultorController: UIViewController {
         }
     }
     
+    
+    @IBAction func oppositePress(_ sender: UIButton) {
+        if ptmLabel.text!.isEmpty || ptmLabel.text!.contains("..") {
+            return
+        }
+        
+        if let ptm = ptmLabel.text {
+            let newValue = Double(ptm)!*Double(-1)
+            ptmLabel.text = String(format: "%.2f", newValue)
+        }
+    }
+    
+    @IBAction func optionOpposite(_ sender: UIButton) {
+        if optionPriceLabel.text!.isEmpty || optionPriceLabel.text!.contains("..") {
+            return
+        }
+        
+        if let optionValue = optionPriceLabel.text {
+            let newValue = Double(optionValue)!*Double(-1)
+            optionPriceLabel.text = String(format: "%.2f", newValue)
+
+        }
+    }
     func resetLabels() {
         ptmLabel.text = ""
         returnLabel.text = ""
